@@ -1,0 +1,116 @@
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    
+    .post{
+        max-width: 720px;
+        margin: 5rem auto 5rem;
+
+        h1{
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+
+        time{
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            display: block;
+            color: #A8A8B3;
+        }
+
+        strong{
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #E1E1E6;
+        }
+
+        p{
+            margin-top: 2rem;
+            font-size: 1.125rem;
+            line-height: 26px;
+            color: #A8A8B3;
+        }
+
+            li{
+                margin: 0.5rem 0rem;
+                padding-bottom: 1rem;
+            }
+
+        ul {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+            color: #A8A8B3;
+            list-style: none; 
+          }
+          
+          ul li::before {
+            content: "\2022"; 
+            color: var(--yellow); 
+            font-weight: 900; 
+            display: inline-block; 
+            width: 2em;
+            margin-left: -2em;
+          }
+
+          .postPreview{
+            background: linear-gradient(180deg, #E1E1E6 54.37%, rgba(225, 225, 230, 0) 123.54%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+          }
+          .continueReading{
+            margin-top: 3rem;
+            max-width: 720px ;
+            width: 100%;
+            padding: 1.81rem;
+            text-align: center;
+            background: var(--shape);
+            border-radius: 6.25rem;
+
+            a{
+                color: white;
+                font-weight: 700;
+                font-size: 1.25rem;
+                line-height: 1.46rem;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+                
+                span{
+                    color: var(--yellow);
+                }
+
+            }
+
+
+        }
+    }
+}
+
+/*-----------------------------------------ANIMAÇÃO CARREGAMENTO --------------------------------*/
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+  
+    .fadeIn {
+      -webkit-animation: fadeIn 1s ease-in-out;
+      -moz-animation: fadeIn 1s ease-in-out;
+      -o-animation: fadeIn 1s ease-in-out;
+      animation: fadeIn 1s ease-in-out;
+      }
